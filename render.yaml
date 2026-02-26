@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: yt-backend
+    env: node
+    plan: free
+    buildCommand: |
+      npm install
+      pip install yt-dlp
+    startCommand: node server.js
